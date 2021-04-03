@@ -1,0 +1,19 @@
+.about {
+    background-image: url("/images/museeReview.jpeg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.about-section {
+    width: 60%;
+    margin: auto;
+    padding: 2rem;
+}
+.about-section h2{
+    text-align: center;
+    font-size: 3rem;
+}
+.header-about{
+    font-size: 3rem;
+}

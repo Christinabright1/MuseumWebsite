@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+ body {
+    line-height: 1.6;
+    scroll-behavior: smooth;
+ }
+img {
+    width: 100%;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1482245294234-b3f2f8d5f1a4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=830&q=80");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.header::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 0.6;
+}
+.header * {
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: sticky;
+
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+/*remove underline and set color to the link*/
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+/*Adding hover effect to the menu*/
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+.text-box h2{
+    font-size: 4rem;
+    padding: 0.5rem;
+}
+.text-box p{
+    font-size: 1.6rem;
+}
+/*logo*/
+nav .logo{
+    text-decoration: none;
+    color: white;
+}
+/*Hide responsiv icon*/
+nav .icon{
+    display: none;
+}
+/*add media query to make a site reponsiv*/
+
+/*galleries*/
+.row {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+.column {
+    flex-basis: 31%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.column h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+.column p{
+    font-size: 1.5rem;
+}
+.icons {
+    text-align: center;
+    margin-top: 3rem;
+}
+.icons .fa{
+    padding: 10px;
+} 
+.artGallery {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 1.5rem;
+}
+/*email submit input*/
+#email-input {
+    padding: 10px;
+}
+#submitEmail{
+    background: red;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+/*footer*/
+footer {
+    margin-top: 3rem;
+}
+.footer-description {
+    margin-top: 4rem;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-column {
+    flex-basis: 22%;
+    padding: 10px;
+    box-sizing: border-box; 
+}
