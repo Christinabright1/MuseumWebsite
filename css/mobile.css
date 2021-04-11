@@ -3,6 +3,7 @@
     body {
         margin: 0;
     }
+    
     .text-box h2{
         font-size: 2rem;
         padding: 0.5rem;
@@ -12,14 +13,21 @@
     }
     .nav-links {
         position: absolute;
+        color: #fff;
         background-color: rgb(77, 71, 71);
+        width: 100%;
+        opacity: 0.6;
+        position: absolute;
         height: 100vh;
-        width: 200px;
         top: 0;
-        left: -200px; /*hidden close icon*/
+        left: -100%; /*hidden close icon*/
         text-align: left;
         z-index: 2;
         transition: 1s;
+    }
+.logo{
+        padding-top: 1rem;
+        padding-left: 1rem;
     }
     nav .icon{
         display: block;
